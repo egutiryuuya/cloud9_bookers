@@ -1,0 +1,12 @@
+
+<body>
+<P><strong>Title</strong>: <%= @book.title %></P>
+
+
+<P><strong>Body</strong>: <%= @book.body %></P>
+
+<div class = "show_back_edit">
+<span><%= link_to("Edit","/books/#{@book.id}/edit") %></span>|
+<%= link_to("Back","/books") %>
+</div>
+</body>
